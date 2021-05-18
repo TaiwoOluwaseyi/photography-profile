@@ -18,7 +18,6 @@ img {
   display: flex;
 }
 
-
 .container {
   padding: 3rem 5rem 0rem 9rem;
   width: 100%;
@@ -73,6 +72,38 @@ span {
   display: none;
 }
 
+#email {
+  display: flex;
+  width: 100%;
+}
+
+input {
+  height: 3rem;
+  border: 2px solid hsl(0, 36%, 70%);
+  border-radius: 50px;
+  width: 55%;
+  font-family: "Josefin Sans", sans-serif;
+  font: 1.2em;
+  padding: 1.5em;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1em;
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+button {
+  margin-left: -5rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 30px;
+  width: 5rem;
+  background-color: hsl(0, 36%, 70%);
+}
+
 @media only screen and (max-width: 600px) {
   .main-section {
     flex-direction: column-reverse;
@@ -97,4 +128,13 @@ span {
   .info {
     padding: 2.5rem;
   }
+  input {
+    width: 70%;
+    margin-left: 6rem;
+  }
+
+
+
+
+
 }
