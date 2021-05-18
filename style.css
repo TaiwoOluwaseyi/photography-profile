@@ -9,7 +9,6 @@ body {
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
 }
-
 img {
   width: 100%;
 }
@@ -29,7 +28,7 @@ img {
   width: 200px;
 }
 
-*/ .logo {
+.logo {
   width: 100%;
   margin: 2.5rem;
   margin-left: 0;
@@ -40,6 +39,12 @@ img {
 
 .right {
   flex: 1;
+  height: 100vh;
+}
+.right-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .main-text {
@@ -60,9 +65,6 @@ h1 {
   font-size: 4rem;
 }
 
-.right-image {
-  width: 100%;
-}
 
 p,
 span {
@@ -74,17 +76,18 @@ span {
 
 #email {
   display: flex;
-  width: 100%;
+  width: 70%;
 }
 
 input {
-  height: 3rem;
   border: 2px solid hsl(0, 36%, 70%);
   border-radius: 50px;
-  width: 55%;
-  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  font-family:"Josefin Sans", sans-serif;
   font: 1.2em;
   padding: 1.5em;
+  padding-right: 3rem;
+
 }
 input:focus {
   outline: none;
@@ -99,12 +102,14 @@ button {
   margin-left: -5rem;
   height: 3.5rem;
   border: none;
+  padding: 0 2.5rem;
   border-radius: 30px;
-  width: 5rem;
-  background-color: hsl(0, 36%, 70%);
+   background-image: linear-gradient(135deg, hsl(05, 80%, 86%), hsl(0, 74%, 74%));
+/* - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .main-section {
     flex-direction: column-reverse;
   }
@@ -128,8 +133,13 @@ button {
   .info {
     padding: 2.5rem;
   }
-  input {
-    width: 70%;
-    margin-left: 6rem;
+  #email {
+    margin: auto;
   }
+.were-text, h1 {
+  font-size: 2.5rem;
+}
+
+
+
 }
